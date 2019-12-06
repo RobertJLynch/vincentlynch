@@ -26,13 +26,11 @@ menu.forEach(function(elem){
 });
 
 
-//--- Parallax scrolling---
-if ($(window).outerWidth() >= 768) {
-    window.addEventListener("scroll", () => {
-        let offset = window.pageYOffset;
-        firstImage.style.backgroundPositionY = (offset * 0.7) + "px";
-    });
-}
+//--- Parallax scrolling ---
+window.addEventListener("scroll", () => {
+    let offset = window.pageYOffset;
+    firstImage.style.backgroundPositionY = (offset * 0.7) + "px";
+});
 
 // Smooth scrolling
 
